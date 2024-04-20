@@ -19,7 +19,7 @@ sorting_lib = { git = "https://github.com/yourusername/sorting_lib.git" }
 ```
 
 ## Usage
-```
+```rust
 use sorting_lib::sorting::{quick_sort, merge_sort};
 use std::cmp::Ordering;
 
