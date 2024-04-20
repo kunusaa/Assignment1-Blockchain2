@@ -16,3 +16,20 @@ Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
 sorting_lib = { git = "https://github.com/yourusername/sorting_lib.git" }
+```
+
+## Usage
+```
+use sorting_lib::sorting::{quick_sort, merge_sort};
+use std::cmp::Ordering;
+
+fn main() {
+    let mut numbers = vec![10, 5, 2, 3, 7];
+    quick_sort(&mut numbers, &|a, &b| a.cmp(&b));
+    println!("Quick Sorted: {:?}", numbers);
+
+    let mut more_numbers = vec![10, 5, 2, 3, 7];
+    merge_sort(&mut more_numbers, &|a, &b| a.cmp(&b));
+    println!("Merge Sorted: {:?}", more_numbers);
+}
+```
