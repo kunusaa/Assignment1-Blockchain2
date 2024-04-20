@@ -15,7 +15,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-sorting_lib = { git = "https://github.com/yourusername/sorting_lib.git" }
+sorting_lib = { git = "https://github.com/kunusaa/sorting_lib.git" }
 ```
 
 ## Usage
